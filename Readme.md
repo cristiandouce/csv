@@ -1,7 +1,7 @@
 
 # csv
 
-  Create CSV from data and offers a download DataURI as a `.csv` file. In the near future it will try to comply with [RFC4180](http://tools.ietf.org/html/rfc4180). Right now it just simply takes an array of data and converts to `csv` string.
+  Creates CSV String from data and offers a download DataURI as a `.csv` file. In the near future it will try to comply with [RFC4180](http://tools.ietf.org/html/rfc4180). Right now it just simply takes an array of data and converts to CSV string.
   
 ## Installation
 
@@ -49,6 +49,7 @@
   scoreboard.csv()  // "age","name","points" CRLF
                     // "23","Cristian","123" CRLF
                     // ...
+````
 
 ### .csv(v)
   Set csv string to `v`
@@ -71,15 +72,16 @@
 ## TODO
   * Implement a `.parse` method from csv string to array.
   * Implement a `.json` method to output data like the following:
-  ````javascript
-    {
-      data: [
-        { age: 23, name: "Cristian", points: 145 },
-        { age: 27, name: "Mono", points: 708 },
-        //...
-      ]
-    }
-  ````
+  
+````javascript
+  {
+    data: [
+      { age: 23, name: "Cristian", points: 145 },
+      { age: 27, name: "Mono", points: 708 },
+      //...
+    ]
+  }
+````
 
 ## License
 
