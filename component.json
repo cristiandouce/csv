@@ -1,0 +1,15 @@
+{
+  "name": "csv",
+  "repo": "cristiandouce/csv",
+  "description": "Create CSV from data and download",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/object": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}

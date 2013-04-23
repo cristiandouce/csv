@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>CSV component example</title>
+  <script type="text/javascript" src="../build/build.js"></script>
+</head>
+<body>
+  <script type="text/javascript">
+    var data = [
+      ['age', 'name', 'points'],
+      [23, 'cristian', 45],
+      [27, 'mono', 105],
+      [22, 'maxi', 5],
+      [31, 'martin', 703]
+    ]
+
+    var csv = require('csv');
+
+    var scoreboard = csv(data);
+    console.log(scoreboard.download());
+    console.log(scoreboard.csv());
+  </script>
+</body>
+</html>
