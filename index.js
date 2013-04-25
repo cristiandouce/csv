@@ -145,7 +145,12 @@ CSV.prototype.convert = function() {
 
     }
 
-    out.push('\r\n');
+    // Do not CRLC in last record
+    // Avoids parsing of empty record
+    if (i < l - 1) {
+      out.push('\r\n');
+    }
+    
     this._csv += out.join('');
   }
 
