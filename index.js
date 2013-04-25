@@ -145,7 +145,7 @@ CSV.prototype.convert = function() {
 
     }
 
-    // Do not CRLC in last record
+    // Do not CRLF in last record
     // Avoids parsing of empty record
     if (i < l - 1) {
       out.push('\r\n');
