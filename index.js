@@ -113,7 +113,8 @@ CSV.prototype.csv = function(v) {
  */
 
 CSV.prototype.download = function() {
-  this.file = "data:text/csv;charset=$charset,".replace('$charset', this.options.encoding) + encodeURIComponent(this.csv());
+  this.file = "data:text/csv;charset=$charset,".replace('$charset', this.options.encoding);
+  this.file += encodeURIComponent(this.csv());
 
   return this.file;
 }
